@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -r ../* ../../SteveFroehlich.github.io/
+cp -r * ../SteveFroehlich.github.io/
