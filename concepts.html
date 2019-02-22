@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133481991-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133481991-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kernel of Quantum</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="site/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+
+    <link href="site/resources/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <style>
+    body {
+      background-color: #585858;
+      color: #404040;
+    }
+    .welcom_text {
+      color: #DCDCDC;
+      padding: 5% 10% 5% 10%;
+      text-align:left;
+    }
+    a {
+      color: deepskyblue;
+    }
+
+  /* custom css for this page below */
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  color: #DCDCDC;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: white;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kernel of Quantum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://stevefroehlich.github.io/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://stevefroehlich.github.io/">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" >
+          <div class="welcom_text">
+            <h2>Concepts and courses</h2>
+            <p>This page shows how each concept is related to each other. Top level
+              topics can be thought of as courses, and are listed in order.
+              For example Linear Algebra is a pre-requisite to Quantum Mechanics</p>
+            <p>Click on the arrow(s) to expand or collapse the tree branches.</p>
+
+
+            <ul id="myUL">
+              <li><span class="caret">Linear Algebra</span>
+                <ul class="nested">
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/matrix_arithmetic/matrix_arithmetic.html" style="color: white;">Matrix Arithmetic </a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/vectors/vectors.html" style="color: white;">Vectors</a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/determinant/determinant.html" style="color: white;">Determinant</a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/identity_matrix/identity_matrix.html" style="color: white;">Identity Matrix</a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/invertible_matrix/invertible_matrix.html" style="color: white;">Invertible Matrix</a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/linear_dependence/linear_dependence.html" style="color: white;">Linear Dependence</a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/vector_space/vector_space.html" style="color: white;">Span</a></li>
+                  <li><a href="https://stevefroehlich.github.io/linear_algebra/span/span.html" style="color: white;">Vector Space </a></li>
+                </ul>
+              </li>
+              </li>
+              <li><span class="caret">Quantum Algorithms</span>
+<!-- left as example for nested elements
+    <ul class="nested">
+      <li>Water</li>
+      <li>Coffee</li>
+      <li><span class="caret">Tea</span>
+        <ul class="nested">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li><span class="caret">Green Tea</span>
+            <ul class="nested">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+-->
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="site/resources/vendor/jquery/jquery.min.js"></script>
+    <script src="site/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+  </body>
+</html>
