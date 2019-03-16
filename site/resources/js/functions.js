@@ -1,8 +1,10 @@
+/*
+    Function to use Katex to render LaTex based math
+*/
     (function(){
       $(".math").each(function() {
         var texTxt = $(this).text();
         el = $(this).get(0);
-        console.log("data: " + el)
         if(el.tagName == "DIV"){
             addDisp = "\\displaystyle";
         } else {
@@ -17,10 +19,12 @@
       }); 
     })();
 
+/*
+    Functions to expand and collapse answers and solutions
+*/
     function toggleAnswer() {
       $(".answer").toggle();
     }
-
     function toggleSolution() {
       $(".solution").toggle();
     }
