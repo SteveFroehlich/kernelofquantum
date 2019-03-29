@@ -31,12 +31,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="https://stevefroehlich.github.io/">Home
+              <a class="nav-link" href="#">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://stevefroehlich.github.io/">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
           </ul>
         </div>
@@ -59,76 +59,106 @@
       and it will be rendered when the page is published
     -->
 
-          <h1 class="mt-5">Span</h1>
+          <h1 class="mt-5">Vector Spaces</h1>
           <p>
-            Solve the below problems
-            <br/>
+            Specific Instructions for the problems
+            <br/><small>
+            (change this and title for your concept. For example: 
+            <a href="linear_algebra/matrix_arithmetic/matrix_arithmetic.html">matrix example</a>)
+            </small>
           </p>
+          <br/>
           <div class="text-left">
-
-          <a class="btn btn-dark" href="https://www.reddit.com/r/kernelofquantum/comments/b1pa2b/questions_for_span/" >Question</a>
-
-          <a class="btn btn-dark" href="https://www.reddit.com/r/kernelofquantum/comments/b1p8zn/material_for_span/">Material</a>
-          <br/><br/>
 
             <!-- begin problems -->
             <p>1.</p>
             <div class="math">
-              \vec{v} = 
-              \begin{bmatrix}
-                3 \\
-                2
-              \end{bmatrix}
-              \ 
-              \vec{w} = 
-              \begin{bmatrix}
-                1 \\
-                2
-              \end{bmatrix}
-            </div>
-            <br/>
-            <p>What is</p>
-            <div class="math">
-              span(\vec{v},\vec{w}) ?
-            </div>
-            <!-- Solution (will be toggled on and off by solutions button)-->
-            <div class="solution">
-              <br/>
-              Solution:
-              <p>Identify matrix has all ones on its diagonal</p>
-            </div>
-            <!-- Answer (will be toggled on and off by answers button) -->
-            <div class="answer">
-              <br/>
-              Answer:
-              <p>D</p>
-            </div>
-            <br/><br/>
-            E.
-            <div class="math">
               \left(\begin{matrix}
-                1 & 1 & 1 \\
-                1 & 1 & 1 \\
-                1 & 1 & 1
+                1 & 3 & 2 \\
+                6 & 1 & 3
               \end{matrix}\right)
+              +
+              \left(\begin{matrix}
+                1 & 3 & 5 \\
+                7 & 2 & 4
+              \end{matrix}\right)
+              = ?
             </div>
             <!-- Solution (will be toggled on and off by solutions button)-->
             <div class="solution">
               <br/>
               Solution:
-              <p>Identify matrix has all ones on its diagonal</p>
+              <div class="math">
+                \\[3mm]
+                \left(\begin{matrix}
+                  1 + 1 & 3 + 3 & 2 + 5 \\
+                  6 + 7 & 1 + 2 & 3 + 4
+                \end{matrix}\right)
+              </div>
             </div>
             <!-- Answer (will be toggled on and off by answers button) -->
             <div class="answer">
               <br/>
               Answer:
-              <p>D</p>
+              <div class="math">
+                \\[3mm]
+                \left(\begin{matrix}
+                  2 & 6 & 7 \\
+                  13 & 3 & 7 
+                \end{matrix}\right)
+              </div>
             </div>
+
             <br/><br/>
 
+            <!-- problem 2 -->
+            <p>2. </p>
+            <div class="math">
+              \left(\begin{matrix}
+                5 \\
+                9  
+              \end{matrix}\right)
+              +
+              \left(\begin{matrix}
+                1 \\
+                7  
+              \end{matrix}\right)
+              = ?
+            </div>
+            <!-- Solution -->
+            <div class="solution">
+              <br/>
+              Solution:
+              <div class="math">
+                \\[3mm]
+                \left(\begin{matrix}
+                  5 + 1 \\
+                  1 + 7 
+                \end{matrix}\right)
+              </div>
+            </div>
+            <!-- Answer -->
+            <div class="answer">
+              <br/>
+              Answer:
+              <div class="math">
+                \\[3mm]
+                \left(\begin{matrix}
+                  7 \\
+                  16 
+                \end{matrix}\right)
+              </div>
+            </div>
+
+            <br/><br/>
 
           <button class="btn btn-success" onclick="toggleAnswer()">Answers</button>
           <button class="btn btn-info" onclick="toggleSolution()">Solutions</button>
+          <br/><br/>
+          <a class="btn btn-dark" href="https://old.reddit.com/r/learnQuantumComputing/comments/ai6hbd/questions_for_matrix_arithmetic/" >Question</a>
+
+          <a class="btn btn-dark" href="https://old.reddit.com/r/learnQuantumComputing/comments/ai6hyu/links_and_content_for_matrix_arithmetic/">Content</a>
+          
           <br/><br/>
           </div>
         </div>
@@ -138,7 +168,7 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="../../site/resources/vendor/jquery/jquery.min.js"></script>
-    <script src="../../site/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../siteources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
     <script  src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
 
