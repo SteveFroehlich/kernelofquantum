@@ -35,3 +35,19 @@ page.
 If you are interested in contributing you can copy some of the existing
 pages source and create pages for other content or add problems to existing
 pages by sending a pull request.
+
+## Building
+The main thing that needs to be build is the dependency tree of the modules 
+which is done using pip, pipdeptree, setup.py and requirements.txt. Each 
+module has a __init__.py and a setup.py to define the module. The setup.py
+defines the module name and dependencies it has. The requirements.txt lists
+all the modules that are available an the order with which they should be 
+installed. pipdeptree is assumed to be installed on the system. To generate
+the dependency tree:
+
+0. create a virtual env to isolate this project. (https://www.pythonforbeginners.com/basics/how-to-use-python-virtualenv)
+1. ```$ pip install requirements.txt```
+2. ```$ pip install pipdeptree```
+3. ```$ pipdeptree```
+
+which will generate the dependency tree.
